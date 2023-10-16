@@ -21,9 +21,10 @@ namespace TrainingLine.Controllers
             return View(data);
         }
 
-        public BookModel GetBook(int Id)
+        public ViewResult GetBook(int Id)
         {
-            return _bookRepository.GetBookById(Id);
+            var data = _bookRepository.GetBookById(Id);
+            return View(data);
         }
 
         public List<BookModel> SearchBook(string name, string author) {
