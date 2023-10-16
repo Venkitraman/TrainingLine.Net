@@ -23,10 +23,10 @@ namespace TrainingLine.Repository
         {
             return new List<BookModel>
             {
-                new BookModel(){Id=1,Title="MVC",Author="Ram"},
-                new BookModel(){Id=1,Title=".Net",Author="Venkit"},
-                new BookModel(){Id=1,Title="Python",Author="Vikram"},
-                new BookModel(){Id=1,Title="Mern",Author="Hari"}
+                new BookModel(){Id=1,Title="MVC",Author="Mallu",Description="Model View Controller is a type to develope .Net Application"},
+                new BookModel(){Id=1,Title=".Net",Author="Siddhu",Description=".Net is a framework used to develope fullstack application."},
+                new BookModel(){Id=1,Title="Python",Author="Gowthu",Description="Python is a fast growing technology used in AI etc..."},
+                new BookModel(){Id=1,Title="Mern",Author="Alfi",Description="MongoDB , ExpressJS , ReactJS , NodeJS it is a fullstack development !!!"}
             };
         }
     }
