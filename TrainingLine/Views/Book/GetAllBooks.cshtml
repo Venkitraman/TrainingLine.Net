@@ -1,11 +1,13 @@
-﻿@BookModel
+﻿@model IEnumerable<BookModel>
 @{
     ViewData["Title"] = "GetAllBooks";
 }
 
 <h1>GetAllBooks</h1>
-
-@foreach  (var item in BookModel)
+@foreach (var book in Model)
 {
-    
+    <h3>@book.Author</h3>
+    <h2>@book.Title</h2>
 }
+
+
