@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using TrainingLine.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//Configure the Sql Server Database ConnectionStrings
+builder.Services.AddDbContext<BookDBContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
+
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 var app = builder.Build();
 
