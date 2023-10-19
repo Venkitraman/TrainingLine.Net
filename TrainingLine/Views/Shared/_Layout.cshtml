@@ -29,6 +29,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="GetAllBooks">AllBooks</a>
                         </li>
                     </ul>
+                    <button type="button" class="btn btn-warning">
+                        <a asp-action="Login" asp-controller="Login">Login</a>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <a asp-action="signup" asp-controller="Account">Register</</a>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -48,6 +54,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-    @RenderSection("script",required:false);
+    @*@RenderSection("script",required:false);*@
 </body>
 </html>

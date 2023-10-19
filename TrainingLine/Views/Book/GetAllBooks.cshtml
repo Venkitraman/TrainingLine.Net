@@ -15,21 +15,20 @@
                     <p class="card-text">@book.Description</p>
                     <p class="card-text"><small class="text-body-secondary">@book.Author</small></p>
                     <button class="btn btn-primary">
-                        <a asp-controller="Book" asp-action="GetBook" asp-route-id="@book.Id" style="color:white">View Details</a>
+                        <a asp-controller="Book" asp-action="GetBook" asp-route-id="@book.Id" style="color:white;text-decoration:none">View Details</a>
                         </button>
                 </div>
-                
         </div>
     </div>
 }
 </div>
 
-@section script{
+@*@section script{
     <script>
         $(document).ready(function(){
             alert("Hello from Venkit !!!")
         });
     </script>
-}
+}*@
 
 
